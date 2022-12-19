@@ -12,7 +12,7 @@ public class Volcano {
     private Integer VEI;
     private String Agent;
     private String DEATHS;
-
+ 
     public Integer getYear() {
         return Year;
     }

@@ -32,6 +32,7 @@ public class VolcanoAnalyzerTests {
         //Teardown
     }
 
+
     @Test
     public void loadVolcanoes() throws IOException, URISyntaxException {
         //Setup
@@ -46,19 +47,23 @@ public class VolcanoAnalyzerTests {
         //Teardown
     }
 
-    // @Test
-    // public void eruptedInEighties() {
-    //     //Setup
-    //     Integer expected = 40;
 
-    //     //Execute
-    //     Integer actual = va.eruptedInEighties().size();
+    //1. Return the volcanoes that erupted in the 1980s.
 
-    //     //Assert
-    //     assertEquals(expected, actual, "should have 40 volcanoes");
+    @Test
+    public void eruptedInEighties() {
+        //Setup
+        Integer expected = 40;
 
-    //     //Teardown
-    // }
+        //Execute
+        Integer actual = va.eruptedInEighties().size();
+
+        //Assert
+        assertEquals(expected, actual, "should have 40 volcanoes");
+
+        //Teardown
+    }
+
 
     // @Test
     // public void highVEI() {
