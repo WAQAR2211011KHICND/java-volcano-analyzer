@@ -1,3 +1,5 @@
+import java.time.chrono.ThaiBuddhistChronology;
+
 public class Volcano {
     private Integer Year;
     private String Tsu;
@@ -13,6 +15,8 @@ public class Volcano {
     private String Agent;
     private String DEATHS;
  
+    
+    
     public Integer getYear() {
         return Year;
     }
@@ -110,7 +114,14 @@ public class Volcano {
     }
 
     public String getDEATHS() {
-        return DEATHS;
+
+        
+        if(this.DEATHS=="")
+            return "0";
+        else{
+            return this.DEATHS;
+        }
+            
     }
 
     public void setDEATHS(String DEATHS) {
