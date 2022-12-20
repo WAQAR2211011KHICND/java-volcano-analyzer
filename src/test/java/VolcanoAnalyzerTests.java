@@ -256,7 +256,7 @@ public class VolcanoAnalyzerTests {
         //Teardown
     }
 
-    // 11. Return the agents of death for the ten most deadly eruptions.
+    // 12. Return the agents of death for the ten most deadly eruptions.
     @Test
     public void topAgentsOfDeath() {
         //Setup
@@ -268,7 +268,6 @@ public class VolcanoAnalyzerTests {
         //Assert
         assertEquals( expected.length, actual.length, "should have 5 Agents of Death");
         assertArrayEquals(expected, actual, "should have the correct Agents of Death");
-
         //Teardown
     }
 }
